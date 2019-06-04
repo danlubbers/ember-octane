@@ -5,7 +5,10 @@
 <!-- Channel -->
 <main class="flex-1 flex flex-col bg-white overflow-hidden channel">
 
-<ChannelHeader />
+{{!-- The @ symbol is an immutable piece of data being passed in from the outside --}}
+{{!-- From a React background, this @ and passing in is equivalent to PROPS --}}
+{{!-- These are called ARGS or arguements in Ember --}}
+<ChannelHeader @title="Frontend Chat" @description="CSS and JS chat"/>
 
   <!-- Channel Message List -->
   <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
