@@ -8,7 +8,7 @@ module('Acceptance | logging out', function(hooks) {
   test('visiting / teams and clicking Logout', async function(assert) {
     
     await visit('/teams'); // Go to the /teams url
-    debugger;
+    // debugger;
  
     assert.equal(currentURL(), '/teams');
     
